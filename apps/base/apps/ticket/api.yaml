@@ -12,6 +12,19 @@ spec:
   service:
     openApiSpec:
       path: /openapi.yaml
+      operationSets:
+        - name: read
+          matchers:
+            - pathPrefix: /tickets
+              methods:
+                - GET
+        - name: all-access
+          matchers:
+            - methods:
+                - GET
+                - POST
+                - PUT
+                - DELETE
     name: ticket-app
     port:
       number: 3000

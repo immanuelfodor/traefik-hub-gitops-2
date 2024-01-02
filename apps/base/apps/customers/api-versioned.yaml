@@ -47,6 +47,19 @@ spec:
       number: 3000
     openApiSpec:
       path: /openapi.yaml
+      operationSets:
+        - name: read
+          matchers:
+            - pathPrefix: /customers
+              methods:
+                - GET
+        - name: all-access
+          matchers:
+            - methods:
+                - GET
+                - POST
+                - PUT
+                - DELETE
 
 ---
 apiVersion: hub.traefik.io/v1alpha1
