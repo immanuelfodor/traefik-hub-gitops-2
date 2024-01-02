@@ -20,7 +20,10 @@ spec:
   upgrade:
     crds: CreateReplace
   values:
+    image: europe-west9-docker.pkg.dev/traefiklabs/traefik-hub/traefik-hub:latest
     additionalArguments:
+      - --log.level=debug
+      - --hub.platformUrl=https://platform-preview.hub.traefik.io/agent
       - --hub.metrics.opentelemetry.insecure
       - --hub.metrics.opentelemetry.address=prometheus.monitoring:9090
       - --hub.metrics.opentelemetry.path=/api/v1/otlp/v1/metrics
