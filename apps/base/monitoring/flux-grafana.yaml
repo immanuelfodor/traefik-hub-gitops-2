@@ -30,4 +30,4 @@ metadata:
   name: grafana-auth
   namespace: monitoring
 stringData:
-  token: "see README.md"
+  token: "glsa_Hi5qMDnIssLco9s7PKZPzWS4YGCGTJB0_d541c4df"
