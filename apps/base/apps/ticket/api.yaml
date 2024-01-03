@@ -24,7 +24,7 @@ spec:
                 - GET
                 - POST
                 - PUT
-                - DELETE
+                # - DELETE
     name: ticket-app
     port:
       number: 3000
