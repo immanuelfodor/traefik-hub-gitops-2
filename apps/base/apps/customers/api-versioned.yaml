@@ -24,7 +24,7 @@ spec:
   service:
     name: customer-app
     port:
-      number: 3000
+      name: api
     openApiSpec:
       path: /openapi.yaml
 
