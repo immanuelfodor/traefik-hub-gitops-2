@@ -41,9 +41,9 @@ spec:
         values:
           - flights
           - tickets
-  operationFilter:
-    include:
-      - read
+  # operationFilter:
+  #   include:
+  #     - read
 
 ---
 apiVersion: hub.traefik.io/v1alpha1
