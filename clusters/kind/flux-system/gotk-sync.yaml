@@ -98,8 +98,8 @@ spec:
   path: ./apps/base/apiportal-ui
   force: true
   prune: true
-  dependsOn:
-    - name: traefik-hub
+  # dependsOn:
+  #   - name: traefik-hub
   sourceRef:
     kind: GitRepository
     name: flux-system
@@ -114,8 +114,8 @@ spec:
   path: ./apps/base/apps
   force: true
   prune: true
-  dependsOn:
-    - name: traefik-hub
+  # dependsOn:
+  #   - name: traefik-hub
   sourceRef:
     kind: GitRepository
     name: flux-system
