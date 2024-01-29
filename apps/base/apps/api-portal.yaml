@@ -9,4 +9,5 @@ spec:
   apiGateway: api-gateway
   ui:
     logoUrl: https://doc.traefik.io/traefik-hub/assets/img/traefik-hub-logo.svg
-  customDomains: []
+  customDomains:
+  - portal.docker.localhost
