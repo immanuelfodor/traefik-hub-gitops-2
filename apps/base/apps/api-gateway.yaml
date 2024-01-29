@@ -11,5 +11,4 @@ spec:
     - crm-internal
     - admins
     - custom-pick
-  customDomains:
-  - gateway.docker.localhost
+  customDomains: []
