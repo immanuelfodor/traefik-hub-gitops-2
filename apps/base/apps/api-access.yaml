@@ -41,6 +41,9 @@ spec:
         values:
           - flights
           - tickets
+#  operationFilter:
+#    include:
+#      - read
 
 ---
 apiVersion: hub.traefik.io/v1alpha1
@@ -50,7 +53,11 @@ metadata:
 spec:
   groups:
     - admin
+    - crm-user
   apiSelector:
     matchExpressions:
       - key: area
         operator: Exists
+  operationFilter:
+    include:
+      - all-access
