@@ -58,6 +58,6 @@ spec:
     matchExpressions:
       - key: area
         operator: Exists
-  operationFilter:
-    include:
-      - all-access
+  # operationFilter:
+  #   include:
+  #     - all-access
