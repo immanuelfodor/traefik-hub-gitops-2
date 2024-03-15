@@ -10,11 +10,11 @@ metadata:
 spec:
   pathPrefix: "/tickets"
   service:
-    openApiSpec:
-      path: /openapi.yaml
     name: ticket-app
     port:
       number: 3000
+    openApiSpec:
+      path: /openapi.yaml
       operationSets:
         - name: read
           matchers:
